@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Library Haven</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/150?text=Logo" alt="Library Haven Logo" class="logo">
+        </div>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions</p>
+        <input type="text" id="search-bar" placeholder="Search...">
+        <a href="membership.html" class="cta-button">Join Now</a>
+        <a href="events.html" class="cta-button">Upcoming Events</a>
+        <a href="donate.html" class="cta-button">Donate</a>
+    </header>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="new-books.html">New Books</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="open-modal cta-button">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="faq">
+            <div class="section-title">Frequently Asked Questions</div>
+            <details>
+                <summary>How do I become a member?</summary>
+                <p>To become a member, visit the Membership section and follow the instructions.</p>
+            </details>
+            <details>
+                <summary>What services do you offer?</summary>
+                <p>We offer borrowing books, reading rooms, study groups, digital resources, and workshops.</p>
+            </details>
+            <details>
+                <summary>Can I donate?</summary>
+                <p>Yes, we welcome donations. Visit the Donate section for more information.</p>
+            </details>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Library Haven. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/libraryhaven" target="_blank">&#128071;</a>
+            <a href="https://twitter.com/libraryhaven" target="_blank">&#128269;</a>
+            <a href="https://instagram.com/libraryhaven" target="_blank">&#128247;</a>
+        </div>
+    </footer>
+
+    <!-- Newsletter Signup -->
+    <div class="newsletter-signup">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Donation Page Link -->
+    <div class="donation-link">
+        <a href="donate.html" class="cta-button">Support Us</a>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <address>
+                <p>Email: contact@libraryhaven.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Main St, Anytown, USA</p>
+            </address>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
