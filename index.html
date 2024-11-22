@@ -5,193 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Haven</title>
     <link rel="icon" href="https://via.placeholder.com/32?text=Favicon" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f9;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080?text=Library+Haven+Background') no-repeat center center/cover;
-            height: 100vh;
-            position: relative;
-            color: white;
-            text-align: center;
-            padding-top: 50px;
-            animation: fadeIn 3s ease-in-out;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 20px 0;
-            animation: slideInDown 2s ease-in-out;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            animation: slideInUp 2s ease-in-out;
-        }
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        .logo {
-            max-height: 50px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 1em;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            animation: bounce 2s infinite;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section-title {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #007BFF;
-            animation: fadeInLeft 2s ease-in-out;
-        }
-        .testimonials {
-            background-color: #e9ecef;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .testimonials p {
-            margin: 0;
-        }
-        .feature-image {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            animation: fadeInRight 2s ease-in-out;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: white;
-            font-size: 1.5em;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #007BFF;
-        }
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.4);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            animation: slideInDown 0.5s ease-in-out;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
-        }
-        @keyframes slideInUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-30px);}
-            60% {transform: translateY(-15px);}
-        }
-        @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-100%); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes fadeInRight {
-            from { opacity: 0; transform: translateX(100%); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            header p {
-                font-size: 1em;
-            }
-            nav a {
-                float: none;
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -199,7 +13,7 @@
             <img src="https://via.placeholder.com/150?text=Logo" alt="Library Haven Logo" class="logo">
         </div>
         <h1>Intro</h1>
-        <p> intro 2</p>
+        <p>intro 2</p>
         <a href="#membership" class="cta-button">Join Now</a>
         <a href="#events" class="cta-button">Upcoming Events</a>
         <a href="#donate" class="cta-button">Donate</a>
@@ -266,7 +80,7 @@
         <section id="contact">
             <div class="section-title">Contact Us</div>
             <img src="https://via.placeholder.com/800x400?text=Contact+Us" alt="Contact Us" class="feature-image">
-            <p>Blank>
+            <p>Blank></p>
                 <p>Blank</p>
                 <p>Blank</p>
                 <p>Blank</p>
@@ -295,35 +109,6 @@
         </div>
     </div>
 
-    <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Modal functionality
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementsByClassName("open-modal")[0];
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
