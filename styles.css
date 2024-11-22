@@ -396,3 +396,27 @@ body {
 .donation-link a:hover {
     background-color: #0056b3;
 }
+
+/* Donation Form */
+#donation-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#donation-form select, #donation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#donation-form select:focus, #donation-form input:focus {
+    border-color: #007BFF;
+}
+
+#donation-form button {
+    margin-top: 10px;
+}
