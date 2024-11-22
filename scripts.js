@@ -86,3 +86,24 @@ window.addEventListener('scroll', () => {
 
 // Initial check for visible elements
 window.dispatchEvent(new Event('scroll'));
+
+// Newsletter Form Submission
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for subscribing!');
+    this.reset();
+});
+
+// Feedback Form Submission
+document.getElementById('feedback-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your feedback!');
+    this.reset();
+});
+
+// Donation Form Submission
+document.getElementById('donation-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your donation!');
+    this.reset();
+});
