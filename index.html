@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Haven</title>
-    <link rel="icon" href="https://via.placeholder.com/32?text=Favicon" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,9 @@
         <div class="logo-container">
             <img src="https://via.placeholder.com/150?text=Logo" alt="Library Haven Logo" class="logo">
         </div>
-        <h1>Intro</h1>
-        <p>intro 2</p>
+        <h1 id="typing-text"></h1>
+        <p>Discover the world of knowledge at Library Haven</p>
+        <input type="text" id="search-bar" placeholder="Search...">
         <a href="#membership" class="cta-button">Join Now</a>
         <a href="#events" class="cta-button">Upcoming Events</a>
         <a href="#donate" class="cta-button">Donate</a>
@@ -30,61 +31,65 @@
     </nav>
     <div class="container">
         <section id="home">
-            <div class="section-title">Blank</div>
+            <div class="section-title">Welcome to Library Haven</div>
             <img src="https://via.placeholder.com/800x400?text=Community+Space" alt="Community Space" class="feature-image">
-            <p>Blank</p>
+            <p>Welcome to our vibrant community space where knowledge meets curiosity.</p>
             <div class="testimonials">
-                <p>"Blank" - Blank</p>
+                <p>"A wonderful place to learn and explore." - John Doe</p>
             </div>
         </section>
         <section id="about">
             <div class="section-title">About Us</div>
             <img src="https://via.placeholder.com/800x400?text=About+Us" alt="About Us" class="feature-image">
-            <p>Blank</p>
+            <p>We are committed to providing a welcoming environment for everyone to discover the joy of reading.</p>
         </section>
         <section id="services">
             <div class="section-title">Our Services</div>
             <img src="https://via.placeholder.com/800x400?text=Our+Services" alt="Our Services" class="feature-image">
             <ul>
-                <li>Blank</li>
-                <li>Blank</li>
-                <li>Blank</li>
-                <li>Blank</li>
-                <li>Blank</li>
+                <li>Borrowing Books</li>
+                <li>Reading Rooms</li>
+                <li>Study Groups</li>
+                <li>Digital Resources</li>
+                <li>Workshops and Seminars</li>
             </ul>
         </section>
         <section id="events">
             <div class="section-title">Events Calendar</div>
             <img src="https://via.placeholder.com/800x400?text=Events+Calendar" alt="Events Calendar" class="feature-image">
-            <p>Blank</p>
+            <p>Check out our exciting lineup of events!</p>
             <a href="#" class="cta-button">View Events</a>
         </section>
         <section id="membership">
             <div class="section-title">Become a Member</div>
             <img src="https://via.placeholder.com/800x400?text=Become+a+Member" alt="Become a Member" class="feature-image">
-            <p>Blank</p>
+            <p>Join our community today and enjoy exclusive benefits.</p>
             <a href="#" class="cta-button">Join Now</a>
         </section>
         <section id="new-books">
             <div class="section-title">New Books and Resources</div>
             <img src="https://via.placeholder.com/800x400?text=New+Books+and+Resources" alt="New Books and Resources" class="feature-image">
-            <p>Blank</p>
+            <p>Explore our latest additions to the collection.</p>
             <a href="#" class="cta-button">Explore New Books</a>
         </section>
         <section id="blog">
             <div class="section-title">Library News and Blog</div>
             <img src="https://via.placeholder.com/800x400?text=Library+News+and+Blog" alt="Library News and Blog" class="feature-image">
-            <p>Blank</p>
+            <p>Stay updated with the latest news and insights.</p>
             <a href="#" class="cta-button">Read More</a>
         </section>
         <section id="contact">
             <div class="section-title">Contact Us</div>
             <img src="https://via.placeholder.com/800x400?text=Contact+Us" alt="Contact Us" class="feature-image">
-            <p>Blank></p>
-                <p>Blank</p>
-                <p>Blank</p>
-                <p>Blank</p>
-            </address>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
         </section>
     </div>
     <footer>
@@ -96,15 +101,54 @@
         </div>
     </footer>
 
+    <!-- Newsletter Signup -->
+    <div class="newsletter-signup">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Donation Page Link -->
+    <div class="donation-link">
+        <a href="#donate" class="cta-button">Support Us</a>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="section-title">Frequently Asked Questions</div>
+        <details>
+            <summary>How do I become a member?</summary>
+            <p>To become a member, visit the Membership section and follow the instructions.</p>
+        </details>
+        <details>
+            <summary>What services do you offer?</summary>
+            <p>We offer borrowing books, reading rooms, study groups, digital resources, and workshops.</p>
+        </details>
+        <details>
+            <summary>Can I donate?</summary>
+            <p>Yes, we welcome donations. Visit the Donate section for more information.</p>
+        </details>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+        </div>
+    </div>
+
     <!-- Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Contact Us</h2>
             <address>
-                <p>Email:Blank</p>
-                <p>Phone: Blank</p>
-                <p>Address: Blank</p>
+                <p>Email: contact@libraryhaven.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Main St, Anytown, USA</p>
             </address>
         </div>
     </div>
